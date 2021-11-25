@@ -1,0 +1,16 @@
+import java.util.LinkedList;
+import java.util.Queue;
+
+
+ class Main{
+    public static void main (String[] arg) {
+        Queue <Integer> Q = new LinkedList <> ();
+        for(int i = 0; i<=10; i++) // adding elements to the queue
+            Q.add(i);
+        System.out.println("The list of customers is: "+Q);
+        int remove = Q.remove();
+        System.out.println("The first customer to go out is: "+remove);
+        int head = Q.peek();
+        System.out.println("The first in line is: "+head);
+        int queue = Q.size();
+        System.out.println("Size of the queue is: "+queue);
