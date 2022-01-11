@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @AtharvaW29
-- 👀 I’m interested in android development with java
-- 🌱 I’m currently learning data structures
-- 💞️ I’m looking to collaborate on mini projects
+- 👀 I’m currently learning to develop web apps using react
+- 🌱 I have had a past learning experience on an android app project
+- 💞️ I’m looking forward to collaborate on mini projects
 - 📫 How to reach me atharavawagh29101@gmail.com 
 
 <!---
