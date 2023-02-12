@@ -1,7 +1,6 @@
 - 👋 Hi, I’m @AtharvaW29
-- 👀 I’m currently learning to develop web apps using react
-- 🌱 I have had a past learning experience on an android app project
-- 💞️ I’m looking forward to collaborate on mini projects
+- 👀 I’m currently learning ML & Data Science
+- 🌱 Full Satck Web Developer, E-Commerce & Business Developer
 - 📫 How to reach me atharavawagh29101@gmail.com 
 
 <!---
