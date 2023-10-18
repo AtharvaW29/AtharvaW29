@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @AtharvaW29
-- 👀 I’m currently learning ML & Data Science
-- 🌱 Full Satck Web Developer, E-Commerce & Business Developer
+- 👀 A Web3.0 enthusiast with an eye out for cognitive applications
+- 🌱 Full Stack  Developer
 - 📫 How to reach me atharavawagh29101@gmail.com 
 
 <!---
