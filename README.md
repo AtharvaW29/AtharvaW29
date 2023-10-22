@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @AtharvaW29
-- 👀 A Web3.0 enthusiast with an eye out for cognitive applications
+- 👀 A Web3.0 enthusiast with an eye for cognitive applications
 - 🌱 Full Stack  Developer
 - 📫 How to reach me atharavawagh29101@gmail.com 
 
