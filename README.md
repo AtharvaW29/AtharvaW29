@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @AtharvaW29
 - 👀 A Web3.0 enthusiast with an eye for cognitive applications
 - 🌱 Software Developer
-- 📫 How to reach me atharavawagh29101@gmail.com 
+- 📫 How to reach me awagh@usc.edu 
 
 <!---
 AtharvaW29/AtharvaW29 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
