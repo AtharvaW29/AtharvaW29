@@ -110,7 +110,7 @@ const Hero = () => {
               <ArrowDown className="w-4 h-4" />
             </Button>
             <Button variant="heroOutline" size="lg" asChild>
-              <a href="/Atharva_Wagh_Resume.pdf" download>
+              <a href="/AtharvaW29/Atharva_Wagh_Resume.pdf" download>
                 <FileText className="w-4 h-4" />
                 Download Resume
               </a>
