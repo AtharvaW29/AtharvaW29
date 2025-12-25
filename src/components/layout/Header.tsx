@@ -73,7 +73,7 @@ const Header = () => {
             {/* Desktop CTA */}
             <div className="hidden md:flex items-center gap-3">
               <Button variant="outline" size="sm" asChild>
-                <a href="/Atharva_Wagh_Resume.pdf" download>
+                <a href="/AtharvaW29/Atharva_Wagh_Resume.pdf" download>
                   <FileText className="w-4 h-4" />
                   Resume
                 </a>
