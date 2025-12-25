@@ -2,6 +2,23 @@ import { Button } from "@/components/ui/button";
 import { ArrowDown, FileText, Mail, Github, Linkedin } from "lucide-react";
 import { motion } from "framer-motion";
 
+const downloadResume = async () => {
+  try {
+    const response = await fetch('/Atharva_Wagh_Resume.pdf');
+    const blob = await response.blob();
+    const url = window.URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = 'Atharva_Wagh_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    window.URL.revokeObjectURL(url);
+  } catch (error) {
+    console.error('Error downloading resume:', error);
+  }
+};
+
 const Hero = () => {
   const scrollToProjects = () => {
     document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });
@@ -109,11 +126,9 @@ const Hero = () => {
               View Projects
               <ArrowDown className="w-4 h-4" />
             </Button>
-            <Button variant="heroOutline" size="lg" asChild>
-              <a href="/AtharvaW29/Atharva_Wagh_Resume.pdf" download>
-                <FileText className="w-4 h-4" />
-                Download Resume
-              </a>
+            <Button variant="heroOutline" size="lg" onClick={downloadResume}>
+              <FileText className="w-4 h-4" />
+              Download Resume
             </Button>
           </motion.div>
 

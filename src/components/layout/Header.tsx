@@ -3,6 +3,23 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Menu, X, FileText } from "lucide-react";
 
+const downloadResume = async () => {
+  try {
+    const response = await fetch('/Atharva_Wagh_Resume.pdf');
+    const blob = await response.blob();
+    const url = window.URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = 'Atharva_Wagh_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    window.URL.revokeObjectURL(url);
+  } catch (error) {
+    console.error('Error downloading resume:', error);
+  }
+};
+
 const navLinks = [
   { href: "#about", label: "About" },
   { href: "#skills", label: "Skills" },
@@ -72,11 +89,9 @@ const Header = () => {
 
             {/* Desktop CTA */}
             <div className="hidden md:flex items-center gap-3">
-              <Button variant="outline" size="sm" asChild>
-                <a href="/AtharvaW29/Atharva_Wagh_Resume.pdf" download>
-                  <FileText className="w-4 h-4" />
-                  Resume
-                </a>
+              <Button variant="outline" size="sm" onClick={downloadResume}>
+                <FileText className="w-4 h-4" />
+                Resume
               </Button>
             </div>
 
@@ -113,11 +128,9 @@ const Header = () => {
                 </button>
               ))}
               <div className="pt-2">
-                <Button variant="hero" className="w-full" asChild>
-                  <a href="/AtharvaW29/Atharva_Wagh_Resume.pdf" download>
-                    <FileText className="w-4 h-4" />
-                    Download Resume
-                  </a>
+                <Button variant="hero" className="w-full" onClick={downloadResume}>
+                  <FileText className="w-4 h-4" />
+                  Download Resume
                 </Button>
               </div>
             </div>
