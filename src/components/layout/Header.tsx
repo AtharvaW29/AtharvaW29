@@ -114,7 +114,7 @@ const Header = () => {
               ))}
               <div className="pt-2">
                 <Button variant="hero" className="w-full" asChild>
-                  <a href="/Atharva_Wagh_Resume.pdf" download>
+                  <a href="/AtharvaW29/Atharva_Wagh_Resume.pdf" download>
                     <FileText className="w-4 h-4" />
                     Download Resume
                   </a>
