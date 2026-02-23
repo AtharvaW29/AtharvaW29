@@ -32,12 +32,14 @@ import { SiPython, SiJavascript, SiCplusplus, SiTypescript,
   } from "react-icons/si";
 import { TbAutomation, TbBrandCSharp, TbLivePhoto } from "react-icons/tb";
 import { FaJava, FaNetworkWired } from "react-icons/fa";
-import { GiHistogram, GiSloth } from "react-icons/gi";
+import { GiHistogram, GiRadioTower, GiSloth } from "react-icons/gi";
 import { FcScatterPlot } from "react-icons/fc";
 import { VscAzure } from "react-icons/vsc";
 import { IoGitPullRequest } from "react-icons/io5";
 import { DiRedis } from "react-icons/di";
 import { RiRobot2Fill } from "react-icons/ri";
+import { BiSolidNetworkChart } from "react-icons/bi";
+import {  BsFillOpticalAudioFill } from "react-icons/bs";
 
 const skillCategories = [
   {
@@ -65,7 +67,8 @@ const skillCategories = [
     title: "Machine Learning & AI",
     skills: [{icon: SiPytorch, name: "PyTorch"}, {icon: SiTensorflow, name: "TensorFlow"}, 
       {icon: SiKeras, name: "Keras"}, {icon: GiSloth, name: "UnSloth"}, 
-      {icon: SiScikitlearn, name: "Scikit-Learn"}, {icon: SiJfrogpipelines, name: "RAG Pipelines"}],
+      {icon: BiSolidNetworkChart, name: "ONNX"}, {icon: SiScikitlearn, name: "Scikit-Learn"}, 
+      {icon: SiJfrogpipelines, name: "RAG Pipelines"}, {icon: BsFillOpticalAudioFill, name: "OCR"}],
   },
   {
     title: "Data & Analytics",
@@ -95,6 +98,7 @@ const skillCategories = [
       {icon: RiRobot2Fill, name: "Multi-Agent Systems"},
       {icon: TbLivePhoto, name: "Real-Time Systems"},
       {icon: TbAutomation, name: "AI Automation"},
+      {icon: GiRadioTower, name: "Internet of Things"},
       {icon: SiPeakdesign, name: "System Design"}],
   },
 ];

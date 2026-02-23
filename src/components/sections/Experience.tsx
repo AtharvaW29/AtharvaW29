@@ -11,12 +11,13 @@ const experiences = [
     location: "Mumbai, India",
     period: "Jul 2024 - May 2025",
     highlights: [
-      "Designed and deployed AI-powered automation modules within enterprise CRM systems using AWS SageMaker and .NET, integrating data-based insights for customer communication optimization.",
-      "Built containerized data ingestion and transformation APIs with Docker and Kubernetes, achieving 65% faster response time and reliable scalability.",
-      "Developed predictive ML microservices using AWS Lambda and REST APIs for forecasting customer conversion rates with >80% accuracy.",
-      "Collaborated with cross-functional teams to design and deploy AI-driven customer engagement modules, enhancing retention by leveraging behavioral insights.",
+        "Designed, analyzed, and developed backend software solutions using Python and .NET APIs to support enterprise CRM and transactional systems.",
+        "Built and deployed containerized microservices using Docker and Kubernetes, improving system response time by 83\% and enabling scalable, reliable deployments.",
+        "Developed RESTful APIs for structured data ingestion, transformation, and database integration using MySQL and PostgreSQL.",
+        "Implemented automated data processing workflows and analytics modules using AWS SageMaker to support business logic and performance insights.",
+        "Implemented ONNX cross platform machine learning model deployment to develop models in PyTorch and deploy in .NET mvc for scalabiliy and production performance.",
     ],
-    technologies: ["AWS SageMaker", ".NET", "Docker", "Kubernetes", "AWS Lambda", "REST APIs", "PostgreSQL"],
+    technologies: ["AWS SageMaker", ".NET", "Docker", "Kubernetes", "AWS Lambda", "ONNX", "PySpark", "REST APIs", "PostgreSQL"],
   },
   {
     title: "Web Developer Intern",
@@ -25,11 +26,12 @@ const experiences = [
     location: "Mumbai, India",
     period: "Jun 2023 - May 2024",
     highlights: [
-      "Engineered a multi-role, full-stack CRM platform with TypeScript/React frontend, .NET backend, and PostgreSQL database, deployed on AWS for high availability and scalability for consistent loads of 10,000 requests per hour.",
-      "Designed optimized database schemas and caching methods to support consistent high-load operations, similar to real-time data systems used in robotics and vehicle telemetry.",
-      "Performed code reviews, systematic testing, and debugging to enhance platform reliability and user experience.",
+        "Engineered a full-stack enterprise CRM system using React, TypeScript, Flask, and PostgreSQL, supporting consistent transactional workloads.",
+        "Designed optimized database schemas and caching methods to support consistent high-load operations.",
+        "Architected real-time analytics infrastructure and caching layers using PostgreSQL, improving query performance and data throughput.",
+        "Designed \& Deployed a OCR based product recommendation system using Tesseract, Fast API \& Docker.",
     ],
-    technologies: ["TypeScript", "React", ".NET", "PostgreSQL", "AWS", "Redis"],
+    technologies: ["TypeScript", "React", ".NET", "PostgreSQL", "AWS", "Redis", "RabbitMQ", "Tesseract OCR", "FastAPI"],
   },
 ];
 
