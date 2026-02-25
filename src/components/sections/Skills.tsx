@@ -29,6 +29,7 @@ import { SiPython, SiJavascript, SiCplusplus, SiTypescript,
   SiGithub,
   SiGit,
   SiPeakdesign,
+  SiUnity,
   } from "react-icons/si";
 import { TbAutomation, TbBrandCSharp, TbLivePhoto } from "react-icons/tb";
 import { FaJava, FaNetworkWired } from "react-icons/fa";
@@ -61,7 +62,10 @@ const skillCategories = [
       {icon: SiNextdotjs, name: "Next.js"}, 
       {icon: SiLangchain, name: "LangChain"}, 
       {icon: SiApachekafka, name: "Apache Kafka"}, 
-      {icon: SiApachespark, name: "Apache Spark"}],
+      {icon: SiApachespark, name: "Apache Spark"},
+      {icon: SiPeakdesign, name: "System Design"},
+      {icon: SiUnity, name: "Game Development"}
+    ]
   },
   {
     title: "Machine Learning & AI",
