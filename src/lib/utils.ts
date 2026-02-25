@@ -20,7 +20,7 @@ export function isIOSSafari(): boolean {
  * Downloads the resume PDF with iOS Safari compatibility
  */
 export async function downloadResume(): Promise<void> {
-  const resumePath = '/AtharvaW29/Atharva_Wagh_Resume.pdf';
+  const resumePath = '/AtharvaW29/Atharva_Wagh.pdf';
   
   // For iOS Safari, open in new tab instead of downloading
   if (isIOSSafari()) {
@@ -47,7 +47,7 @@ export async function downloadResume(): Promise<void> {
     const url = window.URL.createObjectURL(blob);
     const link = document.createElement('a');
     link.href = url;
-    link.download = 'Atharva_Wagh_Resume.pdf';
+    link.download = 'Atharva_Wagh.pdf';
     link.style.display = 'none';
     
     document.body.appendChild(link);
