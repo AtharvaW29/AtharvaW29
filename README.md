@@ -88,15 +88,19 @@ I'm passionate about the intersection of **systems engineering**, **data at scal
 
 ---
 
-## 📊 GitHub Analytics
+## 📊 GitHub Analytics (Personal & USC)
 
 <div align="center">
 
-![Atharva's GitHub Stats](https://github-readme-stats.vercel.app/api?username=AtharvaW29&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true)
+![GitHubCard](https://githubcard.com/AtharvaW29.svg?d=4uErcWwK)
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=AtharvaW29&layout=compact&theme=tokyonight&hide_border=true&langs_count=10)
+![GitHubCard](https://githubcard.com/awagh29.svg?d=75NdKG_f)
+
+![Top Languages](https://github-readme-stats-salesp07.vercel.app/api/top-langs/?username=AtharvaW29&layout=compact&theme=tokyonight&hide_border=true&langs_count=10)
 
 ![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=AtharvaW29&theme=tokyonight&hide_border=true)
+
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=awagh29&theme=tokyonight&hide_border=true)
 
 </div>
 
@@ -178,7 +182,7 @@ Peer-reviewed research on decentralized energy trading with distributed smart co
 
 ## 📈 Activity Graph
 
-[![Atharva's Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=AtharvaW29&theme=tokyo-night&hide_border=true)](https://github.com/AtharvaW29)
+[![Atharva's Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=awagh29&theme=tokyo-night&hide_border=true)](https://github.com/AtharvaW29)
 
 ---
 
@@ -195,5 +199,5 @@ Peer-reviewed research on decentralized energy trading with distributed smart co
 *"Build systems that scale, write code that lasts."*
 
 ![Profile Views](https://komarev.com/ghpvc/?username=AtharvaW29&color=blue&style=flat-square)
-
+![School Profile Views](https://komarev.com/ghpvc/?username=awagh29&color=blue&style=flat-square)
 </div>

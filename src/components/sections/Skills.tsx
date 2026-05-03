@@ -9,18 +9,15 @@ import { SiPython, SiJavascript, SiCplusplus, SiTypescript,
   SiTensorflow,
   SiKeras,
   SiScikitlearn,
-  SiJfrogpipelines,
   SiPandas,
   SiNumpy,
   SiRstudioide,
   SiJupyter,
   SiMysql,
   SiMongodb,
-  SiAmazonredshift,
   SiPostgresql,
   SiApachecassandra,
   SiFirebase,
-  SiAmazonwebservices,
   SiGooglecloud,
   SiDocker,
   SiKubernetes,
@@ -30,17 +27,21 @@ import { SiPython, SiJavascript, SiCplusplus, SiTypescript,
   SiGit,
   SiPeakdesign,
   SiUnity,
+  SiOllama,
+  SiOpenai,
+  SiHuggingface,
   } from "react-icons/si";
 import { TbAutomation, TbBrandCSharp, TbLivePhoto } from "react-icons/tb";
-import { FaJava, FaNetworkWired } from "react-icons/fa";
-import { GiHistogram, GiRadioTower, GiSloth } from "react-icons/gi";
+import { FaJava, FaNetworkWired, FaAws, FaGoogle } from "react-icons/fa";
+import { GiHistogram, GiRadioTower, GiSloth, GiBrain } from "react-icons/gi";
 import { FcScatterPlot } from "react-icons/fc";
 import { VscAzure } from "react-icons/vsc";
 import { IoGitPullRequest } from "react-icons/io5";
 import { DiRedis } from "react-icons/di";
 import { RiRobot2Fill } from "react-icons/ri";
-import { BiSolidNetworkChart } from "react-icons/bi";
-import {  BsFillOpticalAudioFill } from "react-icons/bs";
+import { BiSolidNetworkChart, BiChip } from "react-icons/bi";
+import { BsFillOpticalAudioFill, BsRobot } from "react-icons/bs";
+import { MdAutoAwesome, MdStorage } from "react-icons/md";
 
 const skillCategories = [
   {
@@ -72,7 +73,7 @@ const skillCategories = [
     skills: [{icon: SiPytorch, name: "PyTorch"}, {icon: SiTensorflow, name: "TensorFlow"}, 
       {icon: SiKeras, name: "Keras"}, {icon: GiSloth, name: "UnSloth"}, 
       {icon: BiSolidNetworkChart, name: "ONNX"}, {icon: SiScikitlearn, name: "Scikit-Learn"}, 
-      {icon: SiJfrogpipelines, name: "RAG Pipelines"}, {icon: BsFillOpticalAudioFill, name: "OCR"}],
+      {icon: MdAutoAwesome, name: "RAG Pipelines"}, {icon: BsFillOpticalAudioFill, name: "OCR"}],
   },
   {
     title: "Data & Analytics",
@@ -83,14 +84,14 @@ const skillCategories = [
   {
     title: "Databases & Caching",
     skills: [{icon: SiMysql, name: "MySQL"}, {icon: SiMongodb, name: "MongoDB"}, 
-      {icon: SiAmazonredshift, name: "AWS Redshift"}, {icon: SiPostgresql, name: "PostgreSQL"}, 
+      {icon: SiPostgresql, name: "PostgreSQL"}, {icon: MdStorage, name: "AWS Redshift"}, 
       {icon: SiApachecassandra, name: "Cassandra"}, {icon: SiFirebase, name: "Firebase"},
       {icon: DiRedis, name: "Redis"}, {icon: SiRabbitmq, name: "RabbitMQ"}],
   },
   {
     title: "Cloud & DevOps",
-    skills: [{icon: SiAmazonwebservices, name: "AWS"}, {icon: VscAzure, name: "Azure"}, 
-      {icon:  SiGooglecloud, name: "GCP"}, {icon: SiGithub, name: "GitHub"},
+    skills: [{icon: FaAws, name: "AWS"}, {icon: VscAzure, name: "Azure"}, 
+      {icon: FaGoogle, name: "GCP"}, {icon: SiGithub, name: "GitHub"},
       {icon: SiDocker, name: "Docker"}, {icon: SiKubernetes, name: "Kubernetes"}, 
       {icon: IoGitPullRequest, name: "CI/CD"}, {icon: SiLinux, name: "Linux"},
       {icon: SiGit, name: "Git"}],
@@ -104,6 +105,23 @@ const skillCategories = [
       {icon: TbAutomation, name: "AI Automation"},
       {icon: GiRadioTower, name: "Internet of Things"},
       {icon: SiPeakdesign, name: "System Design"}],
+  },
+  {
+    title: "AI Dev Stack & LLMs",
+    skills: [
+      {icon: SiOpenai, name: "OpenAI GPT"},
+      {icon: BsRobot, name: "Claude (Anthropic)"},
+      {icon: FaGoogle, name: "Google Gemini"},
+      {icon: SiOllama, name: "Ollama"},
+      {icon: SiHuggingface, name: "Hugging Face"},
+      {icon: SiLangchain, name: "LangChain"},
+      {icon: GiBrain, name: "LlamaIndex"},
+      {icon: BiChip, name: "MCP Servers"},
+      {icon: MdStorage, name: "Vector DB"},
+      {icon: VscAzure, name: "Azure OpenAI"},
+      {icon: FaAws, name: "AWS Bedrock"},
+      {icon: RiRobot2Fill, name: "Agent Framework"}
+    ]
   },
 ];
 
