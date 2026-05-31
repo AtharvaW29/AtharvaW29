@@ -22,7 +22,7 @@ I'm a Computer Science graduate student at **USC** with a background in building
 
 I'm passionate about the intersection of **systems engineering**, **data at scale**, and **applied ML** — and I love building things that are both technically rigorous and practically useful.
 
-- 🔬 Currently: Research Assistant in Bioinformatics @ USC — building ETL pipelines for RNA-seq data
+- 🔬 Currently: Software Developer @ USC Viterbi K-12 — building Enterprise Applications
 - 🏎️ Latest project: F1 Podium Prediction Model with 82.35% true positive rate & 0.98 AUC
 - 📖 Coursework: Distributed Systems, High-Performance Computing, Deep Learning, Advanced CV
 - 🌏 Previously: Full-stack & automation engineering @ IMFS, Mumbai
@@ -113,16 +113,24 @@ I'm passionate about the intersection of **systems engineering**, **data at scal
 
 A distributed, production-grade AI interview system built on event-driven architecture. Leveraged **Retrieval-Augmented Generation (RAG)** for contextual, intelligent responses and **Kafka** for async messaging across containerized microservices. Designed with real-world scalability in mind — fault-tolerant, low-latency, and deployable at scale.
 
-[![Repo](https://img.shields.io/badge/View%20Repo-181717?style=flat-square&logo=github)](https://github.com/AtharvaW29)
+[![Repo](https://img.shields.io/badge/View%20Repo-181717?style=flat-square&logo=github)](https://github.com/AtharvaW29/AI_Interview_Prototype.git)
 
 ---
 
-### 🧬 TCR Sequence Extraction from RNA-seq Data
-> *Python · R · Apache Spark · Parallel Processing · Bioinformatics Pipeline*
+### 📊 NothingDB
+> *C++20 | CMake | Visual Studio 2026 | MSVC v143 Toolset*
 
-End-to-end bioinformatics pipeline processing **100M+ RNA-seq records** with parallelization and chunking strategies. Achieved **76% sequence alignment accuracy** with cross-tool benchmarking and profiling. Automated data download (ENA), caching layers, and reproducible analysis scripts for clinical interpretation.
+NothingDB is a relational database management system being built from scratch in modern C++.
+- Page-based storage
+- Disk management
+- Buffer pool management
+- B+ Tree indexing
+- Query execution
+- SQL parsing
+- Transactions and WAL
+- Concurrency control
 
-[![Repo](https://img.shields.io/badge/View%20Repo-181717?style=flat-square&logo=github)](https://github.com/AtharvaW29)
+[![Repo](https://img.shields.io/badge/View%20Repo-181717?style=flat-square&logo=github)](https://github.com/AtharvaW29/NothingDBFromScratch.git)
 
 ---
 
@@ -131,7 +139,7 @@ End-to-end bioinformatics pipeline processing **100M+ RNA-seq records** with par
 
 Pre- and post-qualifying race outcome predictor using Logistic Regression on historical F1 datasets. Achieved **82.35% true positive rate** and **0.98 AUC**. Built reusable data pipelines, structured data models, and an interactive Power BI dashboard for race analysis.
 
-[![Repo](https://img.shields.io/badge/View%20Repo-181717?style=flat-square&logo=github)](https://github.com/AtharvaW29)
+[![Repo](https://img.shields.io/badge/View%20Repo-181717?style=flat-square&logo=github)](https://github.com/AtharvaW29/F1_Analysis.git)
 
 ---
 
@@ -183,7 +191,7 @@ Peer-reviewed research on decentralized energy trading with distributed smart co
 ## 📈 Activity Graph
 
 [![Atharva's Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=AtharvaW29&theme=tokyo-night&hide_border=true)](https://github.com/AtharvaW29)
-
+[![Atharva's Academic Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=awagh29&theme=tokyo-night&hide_border=true)](https://github.com/awagh29)
 ---
 
 <div align="center">
