@@ -182,7 +182,7 @@ Peer-reviewed research on decentralized energy trading with distributed smart co
 
 ## 📈 Activity Graph
 
-[![Atharva's Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=awagh29&theme=tokyo-night&hide_border=true)](https://github.com/AtharvaW29)
+[![Atharva's Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=AtharvaW29&theme=tokyo-night&hide_border=true)](https://github.com/AtharvaW29)
 
 ---
 
