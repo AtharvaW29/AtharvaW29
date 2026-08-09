@@ -18,7 +18,6 @@ import { SiPython, SiJavascript, SiCplusplus, SiTypescript,
   SiPostgresql,
   SiApachecassandra,
   SiFirebase,
-  SiGooglecloud,
   SiDocker,
   SiKubernetes,
   SiLinux,
@@ -28,9 +27,9 @@ import { SiPython, SiJavascript, SiCplusplus, SiTypescript,
   SiPeakdesign,
   SiUnity,
   SiOllama,
-  SiOpenai,
   SiHuggingface,
   } from "react-icons/si";
+import { BsOpenai } from "react-icons/bs";
 import { TbAutomation, TbBrandCSharp, TbLivePhoto } from "react-icons/tb";
 import { FaJava, FaNetworkWired, FaAws, FaGoogle } from "react-icons/fa";
 import { GiHistogram, GiRadioTower, GiSloth, GiBrain } from "react-icons/gi";
@@ -109,7 +108,7 @@ const skillCategories = [
   {
     title: "AI Dev Stack & LLMs",
     skills: [
-      {icon: SiOpenai, name: "OpenAI GPT"},
+      {icon: BsOpenai, name: "OpenAI GPT"},
       {icon: BsRobot, name: "Claude (Anthropic)"},
       {icon: FaGoogle, name: "Google Gemini"},
       {icon: SiOllama, name: "Ollama"},
