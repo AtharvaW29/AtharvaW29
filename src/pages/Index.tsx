@@ -1,57 +1,66 @@
+import { Suspense, lazy, useCallback, useEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";
-import Header from "@/components/layout/Header";
-import Footer from "@/components/layout/Footer";
-import Hero from "@/components/sections/Hero";
-import About from "@/components/sections/About";
-import Skills from "@/components/sections/Skills";
-import Experience from "@/components/sections/Experience";
-import Projects from "@/components/sections/Projects";
-import Research from "@/components/sections/Research";
-import Education from "@/components/sections/Education";
-import Contact from "@/components/sections/Contact";
+import QuickView from "@/components/quick/QuickView";
+
+// Phaser is large, so the game only loads when it is actually shown.
+const GameView = lazy(() => import("@/components/game/GameView"));
+
+type View = "game" | "quick";
+
+const QUICK_HASH = "#resume";
+const PLAY_HASH = "#play";
+
+function initialView(): View {
+  if (window.location.hash === QUICK_HASH) return "quick";
+  if (window.location.hash === PLAY_HASH) return "game";
+  // Small touch screens start on the readable page; the game is one tap away.
+  const smallTouch =
+    window.matchMedia("(max-width: 640px)").matches &&
+    window.matchMedia("(pointer: coarse)").matches;
+  return smallTouch ? "quick" : "game";
+}
 
 const Index = () => {
+  const [view, setView] = useState<View>(initialView);
+
+  const go = useCallback((next: View) => {
+    window.history.replaceState(null, "", next === "quick" ? QUICK_HASH : PLAY_HASH);
+    window.scrollTo(0, 0);
+    setView(next);
+  }, []);
+
+  // Follow manual hash edits and back/forward navigation.
+  useEffect(() => {
+    const onHash = () => {
+      if (window.location.hash === QUICK_HASH) setView("quick");
+      else if (window.location.hash === PLAY_HASH) setView("game");
+    };
+    window.addEventListener("hashchange", onHash);
+    return () => window.removeEventListener("hashchange", onHash);
+  }, []);
+
+  useEffect(() => {
+    document.body.classList.toggle("px-body-game", view === "game");
+    return () => document.body.classList.remove("px-body-game");
+  }, [view]);
+
   return (
     <>
       <Helmet>
-        <title>Atharva Wagh | Software Engineer & Research-Oriented Developer</title>
-        <meta 
-          name="description" 
-          content="Atharva Wagh - Software Engineer building scalable distributed systems and AI-driven platforms. MS CS at USC, experienced in ML, cloud-native architectures, and production-grade software." 
+        <title>Atharva Wagh | Software Engineer</title>
+        <meta
+          name="description"
+          content="Atharva Wagh - Software Engineer and MS CS student at USC. Explore his experience, projects and research as a 2D pixel-art town, or read the one-page version."
         />
-        <meta 
-          name="keywords" 
-          content="Software Engineer, Machine Learning Engineer, Distributed Systems, AI, Python, AWS, Full Stack Developer, USC, Atharva Wagh" 
-        />
-        <meta property="og:title" content="Atharva Wagh | Software Engineer" />
-        <meta 
-          property="og:description" 
-          content="Building scalable distributed systems and AI-driven platforms that translate research into production-grade software." 
-        />
-        <meta property="og:type" content="website" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Atharva Wagh | Software Engineer" />
-        <meta 
-          name="twitter:description" 
-          content="Building scalable distributed systems and AI-driven platforms that translate research into production-grade software." 
-        />
-        <link rel="canonical" href="https://atharvawagh.dev" />
       </Helmet>
 
-      <div className="min-h-screen bg-background text-foreground">
-        <Header />
-        <main>
-          <Hero />
-          <About />
-          <Skills />
-          <Experience />
-          <Projects />
-          <Research />
-          <Education />
-          <Contact />
-        </main>
-        <Footer />
-      </div>
+      {view === "game" ? (
+        <Suspense fallback={<div className="px-loading">Loading...</div>}>
+          <GameView onQuickView={() => go("quick")} />
+        </Suspense>
+      ) : (
+        <QuickView onPlay={() => go("game")} />
+      )}
     </>
   );
 };
